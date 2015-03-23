@@ -56,6 +56,7 @@ class Config {
 	}
 
 	protected function configFileExists($path = '/../../../custom_config.inc.php'){
+		echo dirname(__FILE__) . $path;
 		return file_exists(dirname(__FILE__) . $path);
 	}
 }
