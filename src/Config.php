@@ -59,3 +59,5 @@ class Config {
 		return file_exists(dirname(__FILE__) . $path);
 	}
 }
+
+class ConfigFileNotFoundException extends \Exception{}
