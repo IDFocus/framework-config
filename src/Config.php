@@ -17,6 +17,7 @@ class Config {
 			throw new ConfigFileNotFoundException("Config file couldn't be found.");
 		}
 		require_once(dirname(__FILE__) . "/../../../../config/custom_config.inc.php");
+		$this->set($config);
 	}
 
 	/**
