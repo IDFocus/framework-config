@@ -55,8 +55,7 @@ class Config {
 		$this->configValues = $config;
 	}
 
-	protected function configFileExists($path = '/../../../custom_config.inc.php'){
-		echo dirname(__FILE__) . $path;
+	protected function configFileExists($path = '/../../../../config/custom_config.inc.php'){
 		return file_exists(dirname(__FILE__) . $path);
 	}
 }
