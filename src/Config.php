@@ -6,13 +6,13 @@ namespace InterExperts;
  * @SuppressWarnings(PHPMD.UnusedPrivateField)
  */
 class Config {
-	static private $instance = null;
-	private $configValues = array();
+	static protected $instance = null;
+	protected $configValues = array();
 
 	/**
 	 * @codeCoverageIgnore
 	 */
-	private function __construct() {
+	protected function __construct() {
 		if(!$this->configFileExists()){
 			throw new ConfigFileNotFoundException("Config file couldn't be found.");
 		}
