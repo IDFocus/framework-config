@@ -50,8 +50,18 @@ class Config {
 	}
 
 	/**
+	 * Return a config section
+	 */
+	public function getSection($section) {
+		if (!isset($this->configValues[$section])) {
+			return null;
+		}
+		return $this->configValues[$section];
+	}
+
+	/**
 	 * Zet de waarden in de vorm van een array die, vervolgens 
-	 * met deze class benadert kan worden.
+	 * met deze class benaderd kan worden.
 	 */
 	public function set($config){
 		$this->configValues = $config;
