@@ -1,5 +1,5 @@
 <?php
-namespace InterExperts;
+namespace IDFocus;
 
 /**
  * Singleton geeft configuratieinstellingen voor deze installatie
