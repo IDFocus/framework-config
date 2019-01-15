@@ -1,10 +1,10 @@
 {
-    "name": "interexperts/config",
+    "name": "idfocus/config",
     "license": "MIT",
     "description": "Simple configuration framework",
     "autoload": {
         "psr-4": {
-            "InterExperts\\": "src/"
+            "IDFocus\\": "src/"
         }
     },
     "require-dev": {
